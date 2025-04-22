@@ -1,156 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | YourCompany</title>
-  <link rel="icon" type="image/svg+xml" href="/vite.svg">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/about.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | YourCompany</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .nav-link.active {
+            color: #2563eb !important;
+            border-bottom: 2px solid #2563eb;
+        }
+    </style>
 </head>
+
 <body>
-  <header id="main-header">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">MyPortfolio</a>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About Me</a></li>
-          <li><a href="projects.html">My Projects</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
 
-  <main>
-    <section class="page-hero about-hero">
-      <div class="container">
-        <h1>About Me</h1>
-        <p class="lead">Get to know the person behind the work</p>
-      </div>
-    </section>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <section class="about-intro">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-image">
-            <img src="img/Adin.png" alt="Profile photo">
-          </div>
-          <div class="about-content">
-            <h1>Hello, I'm <span class="highlight">Adrianne Julian Claresta</span></h1>
-            <h3>Students at Universitas Lampung</h3>
-            <p>I'm currently a second-year student at Universitas Lampung, passionate about web design and development. Over the past few years, I’ve been actively learning and working on various projects that focus on creating user-friendly and visually engaging digital experiences.</p>
-            <div class="about-buttons">
-              <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-              <a href="projects.html" class="btn btn-outline">View Projects</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </nav>
+    </header>
 
-
-    <section class="experience-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Education</h2>
-          <p>Let me tell you a bit about my educational background.</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Elementary School</h3>
-              <h4>SDN Mohammad Toha</h4>
-              <p class="timeline-date">2010-2016</p>
-              <p>Completed basic education with a strong foundation in core subjects such as math, science, and language. Actively participated in school activities and class leadership roles.</p>
+    <main>
+        <section class="page-hero about-hero">
+            <div class="container">
+                <h1>About Me</h1>
+                <p class="lead">Get to know the person behind the work</p>
             </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Junior High School</h3>
-              <h4>SMP Lanud Sulaiman</h4>
-              <p class="timeline-date">2018-2020</p>
-              <p>Developed critical thinking and academic skills through subjects like science, social studies, and technology. Involved in extracurricular clubs and student council.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Senior High School</h3>
-              <h4>SMAN 9 Bandarlampung</h4>
-              <p class="timeline-date">2021 - 2023</p>
-              <p>Focused on science stream with a strong interest in technology and programming. Participated in various competitions and school-based tech projects.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
 
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <h3>MyPortfolio</h3>
-          <p>A collection of my work that blends innovation with user-centered design.</p>
-          <div class="social-links">
-            <a href="https://github.com/Idheid" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.166 6.84 9.49.5.09.66-.22.66-.49v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.17-1.12-1.48-1.12-1.48-.91-.62.07-.61.07-.61 1 .07 1.53 1.02 1.53 1.02.9 1.53 2.36 1.09 2.94.83.09-.66.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.67-.1-.26-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.02a9.53 9.53 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.42.1 2.68.64.69 1.03 1.58 1.03 2.67 0 3.84-2.34 4.68-4.57 4.93.36.31.69.93.69 1.88v2.79c0 .27.16.59.67.49A10.002 10.002 0 0 0 22 12c0-5.52-4.48-10-10-10z"></path></svg>
-            </a>
-            <a href="https://instagram.com/julianadrianne" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
-            <a href="https://linkedin.com/in/AdrianneJulianC" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-          </div>
-        </div>
-  
-        <!-- Quick Links -->
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-  
-        <!-- Contact Us-->
-        <div class="footer-contact">
-          <h3>Contact Us</h3>
-          <ul>
-            <li>
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <span>+62 82315550334</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>adrianne.julian2006@gmail.com</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>Bandarlampung, Lampung</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="footer-bottom">
-        <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="term.html">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+        <section class="about-intro">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="img/Adin.png" alt="Profile photo">
+                    </div>
+                    <div class="about-content">
+                        <h1>Hello, I'm <span class="highlight">Adrianne Julian Claresta</span></h1>
+                        <h3>Students at Universitas Lampung</h3>
+                        <p>I'm currently a second-year student at Universitas Lampung, passionate about web design and development. Over the past few years, I’ve been actively learning and working on various projects that focus on creating user-friendly
+                            and visually engaging digital experiences.</p>
+                        <div class="about-buttons">
+                            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                            <a href="projects.html" class="btn btn-outline">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <script src="js/script.js"></script>
+
+        <section class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Education</h2>
+                    <p>Let me tell you a bit about my educational background.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Elementary School</h3>
+                            <h4>SDN Mohammad Toha</h4>
+                            <p class="timeline-date">2010-2016</p>
+                            <p>Completed basic education with a strong foundation in core subjects such as math, science, and language. Actively participated in school activities and class leadership roles.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Junior High School</h3>
+                            <h4>SMP Lanud Sulaiman</h4>
+                            <p class="timeline-date">2018-2020</p>
+                            <p>Developed critical thinking and academic skills through subjects like science, social studies, and technology. Involved in extracurricular clubs and student council.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Senior High School</h3>
+                            <h4>SMAN 9 Bandarlampung</h4>
+                            <p class="timeline-date">2021 - 2023</p>
+                            <p>Focused on science stream with a strong interest in technology and programming. Participated in various competitions and school-based tech projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>MyPortfolio</h3>
+                    <p>A collection of my work that blends innovation with user-centered design.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Idheid" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.166 6.84 9.49.5.09.66-.22.66-.49v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.17-1.12-1.48-1.12-1.48-.91-.62.07-.61.07-.61 1 .07 1.53 1.02 1.53 1.02.9 1.53 2.36 1.09 2.94.83.09-.66.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.67-.1-.26-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.02a9.53 9.53 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.42.1 2.68.64.69 1.03 1.58 1.03 2.67 0 3.84-2.34 4.68-4.57 4.93.36.31.69.93.69 1.88v2.79c0 .27.16.59.67.49A10.002 10.002 0 0 0 22 12c0-5.52-4.48-10-10-10z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com/julianadrianne" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/AdrianneJulianC" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="projects.html">My Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us-->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>+62 82315550334</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>adrianne.julian2006@gmail.com</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Bandarlampung, Lampung</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="term.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
